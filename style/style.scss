@@ -1,0 +1,19 @@
+// File : main.scss (Default Theme)
+
+// Initialize style:
+@import "rsc/reset";
+@import "rsc/reset-p";
+@import "rsc/mixins";
+
+// Mobile first, SMACSS structure load:
+@import "base";
+@import "layout";
+@import "modules";
+//@import 'theme';
+@import "state";
+
+// Tablet responsive layout
+//@import 'tablet/@media-tablet';
+
+// Desktop responsive layout
+//@import 'desktop/@media-desktop';
