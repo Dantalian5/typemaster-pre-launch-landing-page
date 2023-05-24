@@ -1,0 +1,11 @@
+@media (hover:hover){
+    .button {
+        &--navbar:hover{
+          background: $c-dark-blue;
+          color: $c-white;
+        }
+        &--cta:hover{
+          background: $c-light-orange;
+        }
+      }
+}
