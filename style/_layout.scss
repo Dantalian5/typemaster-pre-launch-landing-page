@@ -3,7 +3,7 @@
   --section-inline-padding: 6%;
 }
 .flex {
-  display: flex;
+  display: flex;  
 }
 .row {
   flex-flow: row wrap;
@@ -73,32 +73,20 @@
     }
   }
 }
-.dual-image-container {
-  align-items: center;
-  gap: 1.5rem;
-  min-width: 373px;
-  position: relative;
-  left: 100%;
-  transform: translate(-100%, 0rem);
-}
 .section-2{
-    margin-top: 8rem;
+    margin-top: min(30%, 10.5rem);
     &__row{
-        row-gap: 1.875rem;
-        column-gap: 4rem;
+        column-gap: 1.875rem;
+        row-gap: 4rem;
+        align-items: flex-start;
     }
     &__column{
-        flex-basis: 37.5rem;
+        flex-basis: 31.25rem;
         gap: 4rem;
+        align-items: flex-start;
     }
-}
-.subsection{
-    flex-basis: 18.75rem;
-    &__icon{
-        margin-inline: auto;
-    }
-    &__title{
-        margin-block: 3rem 1.5rem;
+    &__subcolumns{
+        flex-basis: 12.5rem;
     }
 }
 .footer{

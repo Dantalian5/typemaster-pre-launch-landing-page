@@ -162,36 +162,22 @@ body {
   flex-basis: 18.75rem;
 }
 
-.dual-image-container {
-  align-items: center;
-  gap: 1.5rem;
-  min-width: 373px;
-  position: relative;
-  left: 100%;
-  transform: translate(-100%, 0rem);
-}
-
 .section-2 {
-  margin-top: 8rem;
+  margin-top: min(30%, 10.5rem);
 }
 .section-2__row {
-  row-gap: 1.875rem;
-  -moz-column-gap: 4rem;
-       column-gap: 4rem;
+  -moz-column-gap: 1.875rem;
+       column-gap: 1.875rem;
+  row-gap: 4rem;
+  align-items: flex-start;
 }
 .section-2__column {
-  flex-basis: 37.5rem;
+  flex-basis: 31.25rem;
   gap: 4rem;
+  align-items: flex-start;
 }
-
-.subsection {
-  flex-basis: 18.75rem;
-}
-.subsection__icon {
-  margin-inline: auto;
-}
-.subsection__title {
-  margin-block: 3rem 1.5rem;
+.section-2__subcolumns {
+  flex-basis: 12.5rem;
 }
 
 .footer {
@@ -295,17 +281,26 @@ body {
   overflow: hidden;
 }
 
-.image-section-1 {
+.dual-image-container {
+  align-items: center;
+  gap: 1.5rem;
+  min-width: 373px;
   position: relative;
-  opacity: 0.9;
+  left: 100%;
+  transform: translate(-100%, 0rem);
 }
-.image-section-1::before {
+
+.orange-overlay {
+  position: relative;
+}
+.orange-overlay::before {
   content: "";
   position: absolute;
   inset: 0;
   z-index: 1;
   background: #f16718;
   border-radius: 1.25rem;
+  opacity: 0.9;
   mix-blend-mode: multiply;
 }
 
@@ -316,6 +311,37 @@ body {
   border-radius: 1rem;
 }
 
+.info-box__icon {
+  margin-inline: auto;
+}
+.info-box__title {
+  margin-block: 3rem 1.5rem;
+}
+
+/* .bg-pattern {
+  &--right,
+  &--left{
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 15.9375rem;
+      height: 15rem;
+      background: hsla(199, 29%, 93%, 1);
+      border-radius: 1.25rem;
+      transform: translate( -50%, 0);
+    }
+  }
+  &--right::before{
+    top:0;
+    left: 50%;
+  }
+   &--left::before{
+    top: 100%;
+    left: -1.875rem;
+    transform: translate( -100%, -100%);
+  } 
+} */
 @media (hover: hover) {
   .button--navbar:hover {
     background: hsl(220, 50%, 17%);
@@ -323,5 +349,28 @@ body {
   }
   .button--cta:hover {
     background: hsl(22, 100%, 69%);
+  }
+}
+@media (min-width: 37.5rem) {
+  :root {
+    --header-top-margin: 2.5rem;
+    --section-inline-padding: 5.2%;
+  }
+  .section-title,
+  .subsection-title,
+  .section-text {
+    text-align: start;
+  }
+  .button {
+    padding: 1rem 1.625rem;
+  }
+  .info-box__icon {
+    margin-inline: 0 auto;
+  }
+  .info-box__title {
+    margin-block: 2.5rem 1.5rem;
+  }
+  .section-2__row {
+    row-gap: 4.5rem;
   }
 }/*# sourceMappingURL=style.css.map */
