@@ -145,6 +145,7 @@ body {
 }
 .section-1__img {
   position: relative;
+  max-width: 100%;
   flex-basis: 43.75rem;
 }
 .section-1__info {
@@ -275,25 +276,23 @@ body {
   width: fit-content;
 }
 
-/* .image {
-  border-radius: 1.25rem;
-  overflow: hidden;
-} */
 .image {
-  border-radius: 1.25rem;
-  overflow: hidden;
+  width: 100%;
 }
 
-.image-holder {
+.image-container {
   border-radius: 1.25rem;
   overflow: hidden;
-  min-width: 371px;
+  flex-grow: 1;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .dual-image-container {
   align-items: center;
   gap: 1.5rem;
   min-width: 373px;
+  width: 100%;
   position: relative;
   left: 100%;
   transform: translate(-100%, 0rem);
