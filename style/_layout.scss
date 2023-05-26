@@ -41,10 +41,9 @@
   }
   &__img {
     flex-basis: 12.5rem;
-    max-width: 100%;
     position: relative;
     &__wrapper {
-      min-width: 23.25rem;
+      width: 0;
       position: relative;
       left: 0rem;
     }
@@ -57,7 +56,7 @@
   }
   &__img {
     position: relative;
-    max-width: 100%;
+    //max-width: 100%;
     flex-basis: 43.75rem;
   }
   &__info {
@@ -67,6 +66,7 @@
     }
     &__title {
       flex-basis: min-content;
+      max-width: 255px;
     }
     &__text {
       flex-basis: 18.75rem;

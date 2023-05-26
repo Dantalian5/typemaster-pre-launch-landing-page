@@ -73,9 +73,18 @@
     width: fit-content;
   }
 }
+/* .image {
+  border-radius: 1.25rem;
+  overflow: hidden;
+} */
 .image {
   border-radius: 1.25rem;
   overflow: hidden;
+}
+.image-holder {
+  border-radius: 1.25rem;
+  overflow: hidden;
+  min-width: 371px;
 }
 .dual-image-container {
   align-items: center;

@@ -19,6 +19,11 @@
       margin-block: 2.5rem 1.5rem;
     }
   }
+  .image-holder {
+    border-radius: 1.25rem;
+    overflow: hidden;
+    min-width: 478px;
+  }
 
   .section-2 {
     &__row {
