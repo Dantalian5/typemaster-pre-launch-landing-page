@@ -1,0 +1,33 @@
+@media (min-width: 67.5rem) {
+  :root {
+    --header-top-margin: 3.4375rem;
+    --section-inline-padding: 11.5%;
+  }
+  .hero-title {
+    font-size: 3.5rem;
+  }
+  .hero-text {
+    font-size: 18px;
+    line-height: 144%;
+  }
+  .header {
+    &__hero {
+      margin-top: 5.1875rem;
+      gap: 7.8125rem;
+    }
+  }
+  .hero__info{
+    max-width: 27.8125rem;
+  }
+  .section-1 {
+    &__info {
+      max-width: 15.9375rem;
+    }
+  }
+  .section-2 {
+    margin-top: 10.5rem;
+    &__column {
+      column-gap: 1.875rem;
+    }
+  }
+}

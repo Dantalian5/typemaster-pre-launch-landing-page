@@ -23,6 +23,11 @@
   }
   .section-1{
     margin-top: 2.5rem;
+    &__info {
+        &__title {
+          margin-right: auto;
+        }
+      }
   }
   .section-2 {
     &__row {

@@ -55,12 +55,11 @@
     gap: 4.6875rem 7.8125rem;
   }
   &__img {
-    flex-basis: 31.25rem;
-    //flex-grow: 5;
+    flex-basis: 450px;
+    flex-grow: 20;
   }
   &__info {
     flex-basis: 15.625rem;
-    //flex-grow: .5;
     &__wrapper {
       gap: 1.5rem 2.25rem;
     }
@@ -74,14 +73,14 @@
   }
 }
 .section-2 {
-  margin-top: min(30%, 10.5rem);
+  margin-top: min(30%, 8.875rem);
   &__row {
     column-gap: 1.875rem;
     row-gap: 4rem;
     align-items: flex-start;
   }
   &__column {
-    flex-basis: 31.25rem;
+    flex-basis: 27rem;
     gap: 4rem;
     align-items: flex-start;
   }

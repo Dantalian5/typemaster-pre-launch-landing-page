@@ -127,7 +127,7 @@
     margin-block: 3rem 1.5rem;
   }
 }
-/* .bg-pattern {
+.bg-pattern {
   &--right,
   &--left{
     position: relative;
@@ -138,16 +138,15 @@
       height: 15rem;
       background: hsla(199, 29%, 93%, 1);
       border-radius: 1.25rem;
-      transform: translate( -50%, 0);
     }
   }
   &--right::before{
     top:0;
-    left: 50%;
+    left: calc(50% + 36.5625rem);
   }
    &--left::before{
     top: 100%;
-    left: -1.875rem;
+    left: calc(50% - 36.5625rem);
     transform: translate( -100%, -100%);
   } 
-} */
+} 

@@ -23,7 +23,7 @@
         </a>
       </div>
     </div>
-    <div class="header__hero flex row bg-pattern--right bg-pattern--left">
+    <div class="header__hero flex row bg-pattern--right">
       <div class="hero__info column">
         <div class="hero__info__title">
           <h1 class="title hero-title">
@@ -51,6 +51,8 @@
         <div class="img__wrapper">
           <div class="image-holder">
             <picture>
+              <source media="(min-width: 67.5rem" srcset="assets/desktop/image-keyboard.jpg" type="image/jpg">
+              <source media="(min-width: 37.5rem)" srcset="assets/tablet/image-keyboard.jpg" type="image/jpg">
               <img class="image" src="assets/mobile/image-keyboard.jpg" alt="mechanical keyboard">
             </picture>
           </div>
@@ -58,27 +60,26 @@
       </div>
     </div>
   </header>
-  <main class="section section-1">
+  <main class="section section-1 bg-pattern--left">
     <div class="section-1__container flex row">
       <div class="section-1__img column">
-
-
         <div class="img__wrapper">
           <div class="dual-image-container flex">
             <div class="image-container orange-overlay">
-              <picture class="image">
+              <picture>
+                <source media="(min-width: 57.5625rem)" srcset="assets/desktop/image-phone-and-keyboard.jpg" type="image/jpg">
+                <source media="(min-width: 37.5rem)" srcset="assets/tablet/image-phone-and-keyboard.jpg" type="image/jpg">
                 <img class="image"  src="assets/mobile/image-phone-and-keyboard.jpg" alt="phone and keyboard">
               </picture>
             </div>
             <div class="image-container">
-              <picture class="image">
+              <picture>
+                <source media="(min-width: 57.5625rem)" srcset="assets/desktop/image-glass-and-keyboard.jpg" type="image/jpg">
+                <source media="(min-width: 37.5rem)" srcset="assets/tablet/image-glass-and-keyboard.jpg" type="image/jpg">
                 <img class="image" src="assets/mobile/image-glass-and-keyboard.jpg" alt="glass and keyboard">
               </picture>
             </div>
-        </div>
-        
-          
-          
+          </div>     
         </div>
       </div>
       <div class="section-1__info column">
@@ -173,22 +174,5 @@
   <footer class="section footer">
     <p class="footer__copyright text section-text"><span class="bolded-text">Typemaster 2021 </span>| All Rights Reserved</p>
   </footer>
-
-
- 
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
- 
-
-  
 </body>
 </html>
