@@ -1,0 +1,19 @@
+$font-family-barlow: "Barlow", sans-serif;
+$font-medium: 500;
+$font-bold: 700;
+$font-black: 900;
+
+$c-orange: hsla(22, 88%, 52%, 1);
+$c-light-orange: hsla(22, 100%, 69%, 1);
+$c-dark-blue: hsla(220, 50%, 17%, 1);
+$c-ghost-blue: hsla(221, 23%, 58%, 1);
+$c-ghost-white: hsla(198, 28%, 93%, 1);
+$c-palid-white: hsla(0, 0%, 95%, 1);
+$c-white: hsla(0, 0%, 100%, 1);
+$c-black: hsla(0, 0%, 0%, 1);
+
+body {
+  min-height: 100vh;
+  min-height: 100svh;
+  background-color: $c-white;
+}

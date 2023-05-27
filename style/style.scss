@@ -13,7 +13,7 @@
 @import "state";
 
 // Tablet responsive layout
-//@import 'tablet/@media-tablet';
+@import '@media/query@tablet';
 
 // Desktop responsive layout
-//@import 'desktop/@media-desktop';
+@import '@media/query@desktop';
