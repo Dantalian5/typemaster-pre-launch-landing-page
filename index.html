@@ -9,10 +9,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style/style.css" type="text/css"> 
+  <link rel="stylesheet" href="style/style.min.css" type="text/css"> 
 </head>
 <body>
-  <header class="section header">
+  <header class="section header" aria-label="header">
     <div class="navbar flex">
       <div class="navbar__logo">
         <svg width="40" height="40" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path fill="#F16718" d="M0 0h40v40H0z"/><path d="M10.342 17c.182 0 .288-.11.288-.299v-8.03c0-.078.046-.125.122-.125h2.443c.182 0 .288-.11.288-.299V6.3c0-.189-.106-.299-.288-.299H5.288C5.106 6 5 6.11 5 6.299v1.948c0 .189.106.299.288.299h2.368c.076 0 .121.047.121.125v8.03c0 .189.106.299.288.299h2.277zm6.57 0c.183 0 .29-.11.29-.299v-5.547c0-.125.09-.141.151-.047l.94 1.619a.37.37 0 00.35.204h1.062a.37.37 0 00.35-.204l.94-1.619c.06-.094.152-.078.152.047v5.547c0 .189.106.299.288.299h2.277c.182 0 .288-.11.288-.299V6.3C24 6.11 23.894 6 23.712 6H21.45a.37.37 0 00-.349.204L19.265 9.3c-.045.094-.136.094-.182 0l-1.836-3.096a.37.37 0 00-.35-.204h-2.26c-.183 0-.289.11-.289.299V16.7c0 .189.106.299.289.299h2.276z" fill="#FFF" fill-rule="nonzero"/></g></svg>
@@ -51,7 +51,7 @@
         <div class="img__wrapper">
           <div class="image-holder">
             <picture>
-              <source media="(min-width: 67.5rem" srcset="assets/desktop/image-keyboard.jpg" type="image/jpg">
+              <source media="(min-width: 67.5rem)" srcset="assets/desktop/image-keyboard.jpg" type="image/jpg">
               <source media="(min-width: 37.5rem)" srcset="assets/tablet/image-keyboard.jpg" type="image/jpg">
               <img class="image" src="assets/mobile/image-keyboard.jpg" alt="mechanical keyboard">
             </picture>
@@ -60,7 +60,7 @@
       </div>
     </div>
   </header>
-  <main class="section section-1 bg-pattern--left">
+  <main class="section section-1 bg-pattern--left" aria-label="section-one">
     <div class="section-1__container flex row">
       <div class="section-1__img column">
         <div class="img__wrapper">
@@ -99,7 +99,7 @@
       </div>
     </div>
   </main>
-  <section class="section section-2">
+  <section class="section section-2" aria-label="section-two">
     <div class="section-2__row flex row">
       <div class="section-2__column column flex row">
         <div class="column section-2__subcolumns info-box">
@@ -171,7 +171,7 @@
       </div>
     </div>
   </section>
-  <footer class="section footer">
+  <footer class="section footer" aria-label="footer">
     <p class="footer__copyright text section-text"><span class="bolded-text">Typemaster 2021 </span>| All Rights Reserved</p>
   </footer>
 </body>
