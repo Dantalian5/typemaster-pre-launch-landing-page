@@ -1,9 +1,9 @@
 :root {
   --header-top-margin: 1.5rem;
-  --section-inline-padding: 6%;
+  --section-inline-padding: 5.2%;
 }
 .flex {
-  display: flex;  
+  display: flex;
 }
 .row {
   flex-flow: row wrap;
@@ -19,7 +19,7 @@
   max-width: 90rem;
   margin-inline: auto;
   padding-inline: clamp(1.5rem, var(--section-inline-padding), 10.3125rem);
-  overflow-x: hidden;
+  overflow: hidden;
 }
 .header {
   margin-top: var(--header-top-margin);
@@ -30,7 +30,7 @@
 }
 .hero {
   &__info {
-    flex-basis: 18.75rem;
+    flex-basis: 16.25rem;
     &__text {
       margin-block: 2rem;
     }
@@ -41,24 +41,22 @@
   }
   &__img {
     flex-basis: 12.5rem;
-    max-width: 100%;
-    position: relative;
-    &__wrapper {
-      min-width: 23.25rem;
-      position: relative;
-      left: 0rem;
-    }
   }
+}
+.img__wrapper {
+  width: 1rem;
+  min-width: 100%;
+  position: relative;
 }
 .section-1 {
   margin-top: 1.5rem;
+  height: auto;
   &__container {
     gap: 4.6875rem 7.8125rem;
   }
   &__img {
-    position: relative;
-    max-width: 100%;
-    flex-basis: 43.75rem;
+    flex-basis: 450px;
+    flex-grow: 20;
   }
   &__info {
     flex-basis: 15.625rem;
@@ -67,32 +65,33 @@
     }
     &__title {
       flex-basis: min-content;
+      max-width: 255px;
     }
     &__text {
       flex-basis: 18.75rem;
     }
   }
 }
-.section-2{
-    margin-top: min(30%, 10.5rem);
-    &__row{
-        column-gap: 1.875rem;
-        row-gap: 4rem;
-        align-items: flex-start;
-    }
-    &__column{
-        flex-basis: 31.25rem;
-        gap: 4rem;
-        align-items: flex-start;
-    }
-    &__subcolumns{
-        flex-basis: 12.5rem;
-    }
+.section-2 {
+  margin-top: min(30%, 8.875rem);
+  &__row {
+    column-gap: 1.875rem;
+    row-gap: 4rem;
+    align-items: flex-start;
+  }
+  &__column {
+    flex-basis: 27rem;
+    gap: 4rem;
+    align-items: flex-start;
+  }
+  &__subcolumns {
+    flex-basis: 12.5rem;
+  }
 }
-.footer{
-    padding-block: min(25%, 8rem) 3.125rem;
-    &__copyright{
-        width: fit-content;
-        margin-inline: auto;
-    }
+.footer {
+  padding-block: min(25%, 8rem) 3.125rem;
+  &__copyright {
+    width: fit-content;
+    margin-inline: auto;
+  }
 }

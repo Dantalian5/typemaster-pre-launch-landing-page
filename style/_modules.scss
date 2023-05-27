@@ -50,6 +50,7 @@
 .button {
   display: block;
   width: fit-content;
+  min-width: max-content;
   padding: 0.6875rem 0.875rem;
   border-radius: 0.5rem;
   &--navbar {
@@ -74,20 +75,33 @@
   }
 }
 .image {
+  width: 100%;
+}
+.image-holder {
   border-radius: 1.25rem;
   overflow: hidden;
+  width: 100%;
+  min-width: 23.25rem;
+  position: relative;
+  left: 0;
+}
+.image-container {
+  border-radius: 1.25rem;
+  overflow: hidden;
+  flex-grow: 1;
 }
 .dual-image-container {
   align-items: center;
   gap: 1.5rem;
-  min-width: 373px;
+  min-width: 23.3125rem;
+  //max-width: 45.625rem;
+  width: 100%;
   position: relative;
   left: 100%;
-  transform: translate(-100%, 0rem);
+  transform: translate(-100%, 0);
 }
 .orange-overlay {
   position: relative;
-  //opacity: 0.9;
   &::before {
     content: "";
     position: absolute;
@@ -113,7 +127,7 @@
     margin-block: 3rem 1.5rem;
   }
 }
-/* .bg-pattern {
+.bg-pattern {
   &--right,
   &--left{
     position: relative;
@@ -124,16 +138,15 @@
       height: 15rem;
       background: hsla(199, 29%, 93%, 1);
       border-radius: 1.25rem;
-      transform: translate( -50%, 0);
     }
   }
   &--right::before{
     top:0;
-    left: 50%;
+    left: calc(50% + 36.5625rem);
   }
    &--left::before{
     top: 100%;
-    left: -1.875rem;
+    left: calc(50% - 36.5625rem);
     transform: translate( -100%, -100%);
   } 
-} */
+} 

@@ -83,7 +83,7 @@ body {
 
 :root {
   --header-top-margin: 1.5rem;
-  --section-inline-padding: 6%;
+  --section-inline-padding: 5.2%;
 }
 
 .flex {
@@ -106,7 +106,7 @@ body {
   max-width: 90rem;
   margin-inline: auto;
   padding-inline: clamp(1.5rem, var(--section-inline-padding), 10.3125rem);
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .header {
@@ -118,7 +118,7 @@ body {
 }
 
 .hero__info {
-  flex-basis: 18.75rem;
+  flex-basis: 16.25rem;
 }
 .hero__info__text {
   margin-block: 2rem;
@@ -129,25 +129,24 @@ body {
 }
 .hero__img {
   flex-basis: 12.5rem;
-  max-width: 100%;
-  position: relative;
 }
-.hero__img__wrapper {
-  min-width: 23.25rem;
+
+.img__wrapper {
+  width: 1rem;
+  min-width: 100%;
   position: relative;
-  left: 0rem;
 }
 
 .section-1 {
   margin-top: 1.5rem;
+  height: auto;
 }
 .section-1__container {
   gap: 4.6875rem 7.8125rem;
 }
 .section-1__img {
-  position: relative;
-  max-width: 100%;
-  flex-basis: 43.75rem;
+  flex-basis: 450px;
+  flex-grow: 20;
 }
 .section-1__info {
   flex-basis: 15.625rem;
@@ -157,13 +156,14 @@ body {
 }
 .section-1__info__title {
   flex-basis: min-content;
+  max-width: 255px;
 }
 .section-1__info__text {
   flex-basis: 18.75rem;
 }
 
 .section-2 {
-  margin-top: min(30%, 10.5rem);
+  margin-top: min(30%, 8.875rem);
 }
 .section-2__row {
   -moz-column-gap: 1.875rem;
@@ -172,7 +172,7 @@ body {
   align-items: flex-start;
 }
 .section-2__column {
-  flex-basis: 31.25rem;
+  flex-basis: 27rem;
   gap: 4rem;
   align-items: flex-start;
 }
@@ -251,6 +251,8 @@ body {
   display: block;
   width: -moz-fit-content;
   width: fit-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
   padding: 0.6875rem 0.875rem;
   border-radius: 0.5rem;
 }
@@ -277,17 +279,32 @@ body {
 }
 
 .image {
+  width: 100%;
+}
+
+.image-holder {
   border-radius: 1.25rem;
   overflow: hidden;
+  width: 100%;
+  min-width: 23.25rem;
+  position: relative;
+  left: 0;
+}
+
+.image-container {
+  border-radius: 1.25rem;
+  overflow: hidden;
+  flex-grow: 1;
 }
 
 .dual-image-container {
   align-items: center;
   gap: 1.5rem;
-  min-width: 373px;
+  min-width: 23.3125rem;
+  width: 100%;
   position: relative;
   left: 100%;
-  transform: translate(-100%, 0rem);
+  transform: translate(-100%, 0);
 }
 
 .orange-overlay {
@@ -318,30 +335,27 @@ body {
   margin-block: 3rem 1.5rem;
 }
 
-/* .bg-pattern {
-  &--right,
-  &--left{
-    position: relative;
-    &::before {
-      content: "";
-      position: absolute;
-      width: 15.9375rem;
-      height: 15rem;
-      background: hsla(199, 29%, 93%, 1);
-      border-radius: 1.25rem;
-      transform: translate( -50%, 0);
-    }
-  }
-  &--right::before{
-    top:0;
-    left: 50%;
-  }
-   &--left::before{
-    top: 100%;
-    left: -1.875rem;
-    transform: translate( -100%, -100%);
-  } 
-} */
+.bg-pattern--right, .bg-pattern--left {
+  position: relative;
+}
+.bg-pattern--right::before, .bg-pattern--left::before {
+  content: "";
+  position: absolute;
+  width: 15.9375rem;
+  height: 15rem;
+  background: hsl(199, 29%, 93%);
+  border-radius: 1.25rem;
+}
+.bg-pattern--right::before {
+  top: 0;
+  left: calc(50% + 36.5625rem);
+}
+.bg-pattern--left::before {
+  top: 100%;
+  left: calc(50% - 36.5625rem);
+  transform: translate(-100%, -100%);
+}
+
 @media (hover: hover) {
   .button--navbar:hover {
     background: hsl(220, 50%, 17%);
@@ -354,7 +368,6 @@ body {
 @media (min-width: 37.5rem) {
   :root {
     --header-top-margin: 2.5rem;
-    --section-inline-padding: 5.2%;
   }
   .section-title,
   .subsection-title,
@@ -370,7 +383,46 @@ body {
   .info-box__title {
     margin-block: 2.5rem 1.5rem;
   }
+  .image-holder {
+    min-width: 29.875rem;
+  }
+  .section-1 {
+    margin-top: 2.5rem;
+  }
+  .section-1__info__title {
+    margin-right: auto;
+  }
   .section-2__row {
     row-gap: 4.5rem;
+  }
+}
+@media (min-width: 67.5rem) {
+  :root {
+    --header-top-margin: 3.4375rem;
+    --section-inline-padding: 11.5%;
+  }
+  .hero-title {
+    font-size: 3.5rem;
+  }
+  .hero-text {
+    font-size: 18px;
+    line-height: 144%;
+  }
+  .header__hero {
+    margin-top: 5.1875rem;
+    gap: 7.8125rem;
+  }
+  .hero__info {
+    max-width: 27.8125rem;
+  }
+  .section-1__info {
+    max-width: 15.9375rem;
+  }
+  .section-2 {
+    margin-top: 10.5rem;
+  }
+  .section-2__column {
+    -moz-column-gap: 1.875rem;
+         column-gap: 1.875rem;
   }
 }/*# sourceMappingURL=style.css.map */
