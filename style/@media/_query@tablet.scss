@@ -1,7 +1,6 @@
 @media (min-width: 37.5rem) {
   :root {
     --header-top-margin: 2.5rem;
-    --section-inline-padding: 5.2%;
   }
   .section-title,
   .subsection-title,
@@ -20,11 +19,11 @@
     }
   }
   .image-holder {
-    border-radius: 1.25rem;
-    overflow: hidden;
-    min-width: 478px;
+    min-width: 29.875rem;
   }
-
+  .section-1{
+    margin-top: 2.5rem;
+  }
   .section-2 {
     &__row {
       row-gap: 4.5rem;

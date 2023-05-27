@@ -50,6 +50,7 @@
 .button {
   display: block;
   width: fit-content;
+  min-width: max-content;
   padding: 0.6875rem 0.875rem;
   border-radius: 0.5rem;
   &--navbar {
@@ -76,20 +77,28 @@
 .image {
   width: 100%;
 }
+.image-holder {
+  border-radius: 1.25rem;
+  overflow: hidden;
+  width: 100%;
+  min-width: 23.25rem;
+  position: relative;
+  left: 0;
+}
 .image-container {
   border-radius: 1.25rem;
   overflow: hidden;
   flex-grow: 1;
-  height: fit-content;
 }
 .dual-image-container {
   align-items: center;
   gap: 1.5rem;
-  min-width: 373px;
+  min-width: 23.3125rem;
+  //max-width: 45.625rem;
   width: 100%;
   position: relative;
   left: 100%;
-  transform: translate(-100%, 0rem);
+  transform: translate(-100%, 0);
 }
 .orange-overlay {
   position: relative;
